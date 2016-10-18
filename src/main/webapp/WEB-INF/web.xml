@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+
+	<display-name>Archetype Created Web Application</display-name>
+	  
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>  
+ 
+	<servlet>
+		<servlet-name>NewUser</servlet-name>
+		<servlet-class>com.walichin.common.NewUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NewUser</servlet-name>
+		<url-pattern>/newuser</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ListUsers</servlet-name>
+		<servlet-class>com.walichin.common.ListUsers</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListUsers</servlet-name>
+		<url-pattern>/users</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SimpleServlet</servlet-name>
+		<servlet-class>com.walichin.common.SimpleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SimpleServlet</servlet-name>
+		<url-pattern>/prueba</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Users_Hib</servlet-name>
+		<servlet-class>com.walichin.common.Users_Hib
+	</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Users_Hib</servlet-name>
+		<url-pattern>/users_hib</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>NewUser_Hib</servlet-name>
+		<servlet-class>com.walichin.common.NewUser_Hib
+	</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NewUser_Hib</servlet-name>
+		<url-pattern>/newuser_hib</url-pattern>
+	</servlet-mapping>
+
+</web-app>
